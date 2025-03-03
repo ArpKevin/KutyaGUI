@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="feladatleiras\Minta adatbázis-kezeléses program\Kutya\.vs\Kutya\v17\DocumentLayout.backup.json" />
+    <Content Include="feladatleiras\Minta adatbázis-kezeléses program\Kutya\.vs\Kutya\v17\DocumentLayout.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="9.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="feladatleiras\Minta adatbázis-kezeléses program\Kutya\.vs\Kutya\DesignTimeBuild\.dtbcache.v2" />
+    <None Include="feladatleiras\Minta adatbázis-kezeléses program\Kutya\.vs\Kutya\FileContentIndex\13be08f7-3e3a-4a82-86b3-13a810a3e9cc.vsidx" />
+    <None Include="feladatleiras\Minta adatbázis-kezeléses program\Kutya\.vs\Kutya\FileContentIndex\a8330c5f-6ceb-44a6-9a50-6dc3357795b8.vsidx" />
+    <None Include="feladatleiras\Minta adatbázis-kezeléses program\Kutya\.vs\Kutya\FileContentIndex\b9f0a64b-a156-426f-96b9-31696ee94bfc.vsidx" />
+    <None Include="feladatleiras\Minta adatbázis-kezeléses program\Kutya\.vs\Kutya\FileContentIndex\c30529c9-2b92-4a57-9eec-6f516329a99c.vsidx" />
+    <None Include="feladatleiras\Minta adatbázis-kezeléses program\Kutya\.vs\Kutya\v17\.futdcache.v2" />
+    <None Include="feladatleiras\Minta adatbázis-kezeléses program\Kutya\.vs\ProjectEvaluation\kutya.metadata.v7.bin" />
+    <None Include="feladatleiras\Minta adatbázis-kezeléses program\Kutya\.vs\ProjectEvaluation\kutya.projects.v7.bin" />
+    <None Include="feladatleiras\Minta adatbázis-kezeléses program\Kutya\.vs\ProjectEvaluation\kutya.strings.v9.bin" />
+    <None Include="feladatleiras\Minta adatbázis-kezeléses program\Kutya\Kutya.sln" />
+    <None Include="feladatleiras\Minta adatbázis-kezeléses program\Kutya\Kutya\Kutya.csproj" />
+  </ItemGroup>
+
+</Project>
