@@ -8,12 +8,12 @@
         ResizeMode="NoResize"
         Title="Kutyák adatbázisa" Height="450" Width="800">
     <Grid>
-        <Button Content="Adatok betöltése" HorizontalAlignment="Left" Margin="360,40,0,0" VerticalAlignment="Top"/>
+        <Button Content="Adatok betöltése" HorizontalAlignment="Center"  VerticalAlignment="Top" Margin="0,50,0,0" Click="Button_Click"/>
         <Label x:Name="ennyiKerultBetoltesreLabel" Content="" HorizontalAlignment="Left" Margin="70,104,0,0" VerticalAlignment="Top"/>
         <Label Content="A kutya adatai:" HorizontalAlignment="Left" Margin="483,99,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Margin="70,135,0,0" VerticalAlignment="Top" Width="120"/>
-        <ListBox Margin="467,175,150,87"/>
-        <Button Content="Kilépés" HorizontalAlignment="Left" Margin="325,367,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="adatokCombobox" HorizontalAlignment="Left" Margin="70,135,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="adatokCombobox_SelectionChanged"/>
+        <ListBox x:Name="allatListbox" Margin="426,175,96,91"/>
+        <Button Content="Kilépés" HorizontalAlignment="Left" Margin="344,369,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
 
     </Grid>
 </Window>

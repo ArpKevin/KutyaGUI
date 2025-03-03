@@ -17,6 +17,7 @@ namespace KutyaGUI
     /// </summary>
     public partial class MainWindow : Window
     {
+        List<Kutya> kutyaLista = new List<Kutya>();
         public MainWindow()
         {
             InitializeComponent();
@@ -24,7 +25,7 @@ namespace KutyaGUI
             string connectionString = "server=localhost;user=root;password=;database=kutya";
 
 
-            List<Kutya> kutyaLista = new List<Kutya>();
+
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -53,7 +54,28 @@ namespace KutyaGUI
                 connection.Close();
             }
 
-            
+            ennyiKerultBetoltesreLabel.Content = $"{kutyaLista.Count} darab adat került betöltésre";
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            adatokCombobox.ItemsSource = kutyaLista.Select(k => k.Nev);
+            adatokCombobox.SelectedIndex = 0;
+        }
+
+        private void adatokCombobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            allatListbox.Items.Clear();
+            if (adatokCombobox.SelectedItem != null)
+            {
+                var kivalasztottAllat = kutyaLista.FirstOrDefault(k => k.Nev == adatokCombobox.SelectedValue);
+                allatListbox.Items.Add(kivalasztottAllat);
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

@@ -51,6 +51,6 @@ public class Kutya
 
     public override string ToString()
     {
-        return $"ID: {Id}\nNév: {Nev}\nKan: {(Kan ? "Igen" : "Nem")}\nKor: {Kor}\nChip Dátum: {ChipDatum.Date}\nKép URL: {KepUrl}\nFajta: {Fajta.FajtaNev}\nGazda neve: {Gazda.Nev}\n";
+        return $"{(this.Kan ? "Kan" : "Szuka")}\nFajta: {this.Fajta.FajtaNev}\nGazda: {this.Gazda.Nev}\nTelefon: {this.Gazda.Tel}\nKor: {this.Kor} éves\nChippelés: {this.ChipDatum}";
     }
 }
